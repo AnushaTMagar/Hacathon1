@@ -1,1 +1,1 @@
-# Hacathon1
+# Hacathon for Humanity
