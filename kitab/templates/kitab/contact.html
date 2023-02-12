@@ -1,0 +1,120 @@
+  <!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>All Products-Kitabalaya</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Prompt:ital,wght@0,300;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head> 
+<body>
+  
+<div class = "container" >
+    <div class ="navbar">
+    <div class= "logo">
+     <a href="index.html"> <img src ="images/Kitabalaya%20(1).png" width ="120px"></a>
+    </div>
+      <nav>
+      <ul id="MenuItems">
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "products.html">Product</a></li>
+          <li><a href = "about.html">About</a></li>
+          <li><a href = "contact.html">Contact</a></li>
+          <li><a href = "account.html">Logout</a></li> 
+          
+          
+        
+          </ul>
+      </nav>
+      <a href="cart.html"> <img src="images/cart.png" width="30px" height="30px"></a>
+         <img src="images/menuicon.png" class="menu-icon" 
+            onclick="menutoggle()">
+ </div>
+   
+    </div>
+  <div class ="categoriess">
+        <div class ="small-container">
+             <div class ="row">
+            <div class ="col-3">
+              <h2>To sell your books please Contact Us on:</h2> 
+                <p>Phone numner: 981092841</p>
+                 <p>Email Address: kitabalaya@gmail.com</p>
+                <h3>Kitabalaya doesnot buy or sell any books/notes listed on the site.
+                    You must contact the seller directly on their phone number shown in product detail.
+                    So kindly DO NOT CALL US if you want to buy any products.</h3>
+                 </div>
+            </div>
+      </div>
+                
+      
+    <div class ="contact_bar">
+      <cont_b>
+            
+          <a href = "https://www.facebook.com"><img src="images/fb.png" width=10%></a>
+          <a href = "https:/www.instagram.com"><img src="images/inst.png" width=5%></a> 
+            
+      </cont_b>
+
+    </div>
+    <!-------footer--------->
+     <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+              <h3>Download our app</h3>
+              <p>Comming soon for both Android and IOS</p>
+              <div class="app-logo">
+              <img src ="images/googleplay.png">
+                  <img src ="images/appst.svg">
+                   </div>
+            </div>
+             <div class="footer-col-2">
+             <img src="images/Kitabalaya%20(1).png">
+              <p>Our purpose is to make the use of used books/notes and providing the cheaper option for reader</p>
+            </div>
+             <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li><a href="Coupons.html">Coupons</a></li>
+                  <li><a href="Coupons.html">Blog post</a></li>
+                  <li><a href="Coupons.html">Return policy</a></li>
+                  <li><a href="Coupons.html">Join affiliate</a></li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us on</h3>
+              <ul>
+                  <li> <a href="https://www.facebook.com">Facebook</a></li>
+                  <li> <a href="https://www.instagram.com">Instagram</a></li>
+                  <li> <a href="https://www.twitter.com">Twitter</a></li>
+                  <li> <a href="https://www.tiktok.com">Titok</a></li>
+                 </ul>
+            </div>
+          </div>
+         </div>
+    </div>
+    <!--------js for toggle menu------>
+    <script>
+    var MenuItems= document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight =="0px")
+                {
+                    MenuItems.style.maxHeight=="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight=="0px";
+                }
+        }
+    </script>
+    
+</body>
+</html>

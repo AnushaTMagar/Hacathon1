@@ -1,0 +1,153 @@
+    <!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>All Products-Kitabalaya</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Prompt:ital,wght@0,300;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head> 
+<body>
+<div class = "container" >
+    <div class ="navbar">
+    <div class= "logo">
+         <img src ="images/Kitabalaya%20(1).png" width ="120px">
+    </div>
+      
+      
+ </div>
+   
+    
+    </div>
+   <!-----account-page--------->
+    <div class="account-page">
+    <div class="container">
+    <div class="row">
+        <div class="col-2">
+         <img src="images/p2.jpg" width="100%">
+        </div>
+         <div class="col-2">
+              <div class="form-container">
+                  <div class="form-btn">
+                      <span onclick="Login()">Login</span>
+                      <span onclick="Register()">Register</span>
+                      <hr id="Indicator">
+                      
+                  </div>
+                  <form id="LoginForm" action="Login.php" method="post">
+                  <input type="text" placeholder="Username" name="Username">
+                  <input type="password" placeholder="Password" name="Password">
+                      <button type="submit" class="btn" onclick="validate()">Login</button>
+                      <a href="">Forget password</a>
+                  </form>
+                  <form id="RegForm" action="connect2.php" method="post">
+                  <input type="text" placeholder="Username" name="Username">
+                  <input type="email" placeholder="Email" name="Email">
+                  <input type="password" placeholder="Password" name="Password">
+                      <button type="submit" class="btn" >Register</button>
+                      
+                  </form>
+             </div>
+         
+        </div>
+     </div>
+    </div>
+   </div>
+    <!-------footer--------->
+     <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+              <h3>Download our app</h3>
+              <p>Comming soon for both Android and IOS</p>
+              <div class="app-logo">
+              <img src ="images/googleplay.png">
+                  <img src ="images/appst.svg">
+                   </div>
+            </div>
+             <div class="footer-col-2">
+             <img src="images/Kitabalaya%20(1).png">
+              <p>Our purpose is to make the use of used books/notes and providing the cheaper option for reader</p>
+            </div>
+             <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li><a href="Coupons.html">Coupons</a></li>
+                  <li><a href="Coupons.html">Blog post</a></li>
+                  <li><a href="Coupons.html">Return policy</a></li>
+                  <li><a href="Coupons.html">Join affiliate</a></li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us on</h3>
+              <ul>
+                  <li> <a href="https://www.facebook.com">Facebook</a></li>
+                  <li> <a href="https://www.instagram.com">Instagram</a></li>
+                  <li> <a href="https://www.twitter.com">Twitter</a></li>
+                  <li> <a href="https://www.tiktok.com">Titok</a></li>
+                  
+              </ul>
+            </div>
+          </div>
+         </div>
+    </div>
+   
+    <!--------js for toggle menu------>
+    <script>
+    var MenuItems= document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight =="0px")
+                {
+                    MenuItems.style.maxHeight=="200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight=="0px";
+                }
+        }
+    </script>
+           
+    <!--------js for toggle form------>
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm"); 
+        var Indicator = document.getElementById("Indicator");
+        
+        function Register()
+        {
+            RegForm.style.transform ="translateX(0px)";
+            LoginForm.style.transform ="translateX(0px)";
+            Indicator.style.transform ="translateX(100px)";
+        }
+        function Login()
+        {
+            RegForm.style.transform ="translateX(300px)";
+            LoginForm.style.transform ="translateX(300px)";
+            Indicator.style.transform ="translateX(0px)";
+        }
+    </script>
+    
+</body>
+</html>
+
+<script>
+function validate()
+{
+    var username=document.getElementByID("username").value;
+    var password=document.getElementByID("password").value;
+    if(username=="admin"&&password=="user")
+    {
+        alert("login successfully");
+        return fasle;
+    }
+        alert("login failed")
+    };
+</script>

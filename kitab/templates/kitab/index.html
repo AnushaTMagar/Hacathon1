@@ -1,0 +1,324 @@
+  <!DOCTYPE html>
+  {%load static %}
+<html lang = "en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title> Kitabalaya |Buying and selling old treasure </title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Prompt:ital,wght@0,300;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
+</head> 
+<body>
+    
+    
+<div class = "header" >    
+<div class = "container" >
+    <div class ="navbar">
+    <div class= "logo">
+       <a href="kitab/index.html"> <img src ="{% static 'static/images/Kitabalaya(1).png' %}" width ="120px"></a>
+         <img src="{% static 'images/menuicon.png'%}" class="menu-icon" onclick="menutoggle(this)" >
+         </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href = "kitab/index.html">Home</a></li>
+          <li><a href = "kitab/products.html">Product</a></li>
+          <li><a href = "kitab/about.html">About</a></li>
+          <li><a href = "kitab/contact.html">Contact</a></li>
+          <li><a href = "kitab/account.html">Logout</a></li>    
+            <a href="kitab/cart.html"> <img src="{% static 'images/cart.png'%}" width="30px" height="30px"></a>
+          </ul>
+      </nav>
+      
+ </div>
+    <div class ="row">
+        <div class ="col-2">
+        <h1>  | Live Your Life <br>In Sustainable Ways |</h1>
+            <p>  Books are amazing things—they allow us to peer into others’ thought processes or imaginations; share our dreams, visions,<br> goals, and insights; and transform the world around us through education and stories either its used or new .<br> Reuse and recycle old books .Save environment by giving chance to used books</p>
+            <a href = "kitab/products.html" class ="btn">Explore Now</a>
+        </div>
+         <div class ="col-2">
+        <img src ="{% static 'images/p2.jpg' %}">
+        </div>
+    </div>
+    </div>
+    </div>
+   
+<!-- featured categories -->
+    <div class ="categories">
+        <div class ="small-container">
+             <div class ="row">
+            <div class ="col-3">
+                <img src ="{% static 'images/Ex.jpg' %}">
+            </div>
+            <div class ="col-3">
+                <img src ="{% static 'images/me1.jpg' %}">
+            </div>
+            <div class ="col-3">
+                <img src ="{% static 'images/pt.jpg' %}">
+            </div>
+        </div>
+        </div>
+       
+    </div>
+    
+    
+    
+<!-- featured categories -->
+   <div class ="small-container">
+        <h2 class ="title">Featured product</h2>
+         <div class="row">
+        <div class="col-4">
+       <a href="product%20details%20.html" ><img src="{% static 'images/physics.jpg' %}"></a>
+            <a href="product%20details%20.html" > <h4>physics</h4> </a>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 250 </p>
+             </div>
+        <div class="col-4">
+            <a href="Chemistry.html"><img src="images/chemistry.jpg"></a>
+            <h4>Chemistry</h4>
+            <div class="rating">
+            <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 300 </p>
+             </div>
+        <div class="col-4">
+            <a href="Biology.html"><img src="{% static 'images/biology.jpg' %}"></a>
+            <h4>Biology</h4>
+            <div class="rating">
+            <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
+             <p> Rs 400 </p>
+             </div>
+        <div class="col-4">
+            <a href="me_before_you.html"><img src="{% static 'images/me1.jpg' %}"></a>
+            <h4>Me before you</h4>
+            <div class="rating">
+            
+               <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 350 </p>
+             </div>
+    </div>
+        <h2 class ="title">Latest product</h2>
+       <div class="row">
+        <div class="col-4">
+        <a href="kiterunner.html"> <img src="{% static 'images/kite.jpg' %}"></a>
+            <h4>Kite runner</h4>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 250 </p>
+             </div>
+        <div class="col-4">
+        <img src="{% static 'images/Pom.jpg' %}">
+            <h4>Principle of management</h4>
+            <div class="rating">
+               <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 300 </p>
+             </div>
+        <div class="col-4">
+        <img src="{% static 'images/biology.jpg' %}">
+            <h4>Biology</h4>
+            <div class="rating">
+            <i class="fa fa-star" ></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 400 </p>
+             </div>
+        <div class="col-4">
+        <img src="images/acc.jpg">
+            <h4>Account</h4>
+            <div class="rating">
+            <i class="fa fa-star" ></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 350 </p>
+             </div>
+             <div class="col-4">
+        <img src="images/1.webp">
+            <h4>Chemistry</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 300 </p>
+             </div>
+             <div class="col-4">
+        <img src="images/physics2.jpg">
+            <h4>Physics</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 300 </p>
+             </div>
+             <div class="col-4">
+        <img src="images/ma.jpg">
+            <h4>Maths</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 300 </p>
+             </div>
+             <div class="col-4">
+        <img src="images/pt.jpg">
+            <h4>Paper towns</h4>
+            <div class="rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+             <p> Rs 300 </p>
+             </div>
+    </div>
+    </div>
+    <!-------offer-------->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+              <img src="images/Ex.jpg" class="offer-img">
+            </div>
+             <div class="col-2">
+                 <p> Exclusive product of Kitabalaya</p>
+                 <h1>A Thousand Splendid Suns</h1>
+                 <small>A Thousand Splendid Suns is a 2007 novel by Afghan-American author Khaled Hosseini, following the huge success of his bestselling 2003 debut The Kite Runner. Mariam, an illegitimate teenager from Herat, is forced to marry a shoemaker from Kabul after a family tragedy.</small>
+                 <a href="product_thousand_sun.html" class="btn">Buy Now  &#9755</a>
+              
+            </div> 
+          </div>
+        </div>
+    </div>
+   
+     <!-------brands-------->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+              <img src="images/esewa.png" >
+            </div>
+            <div class="col-5">
+              <img src="images/pathaao.png" >
+            </div>
+            <div class="col-5">
+              <img src="images/eco.jpg" >
+            </div>
+            <div class="col-5">
+              <img src="images/khalti.png" >
+            </div>
+          </div>
+        </div>
+            </div>
+    <!-------footer--------->
+     <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+              <h3>Download our app</h3>
+              <p>Coming soon for both Android and IOS</p>
+              <div class="app-logo">
+              <img src ="images/googleplay.png">
+                  <img src ="images/appst.svg">
+                   </div>
+            </div>
+             <div class="footer-col-2">
+             <img src="images/Kitabalaya%20(1).png">
+              <p>Our purpose is to make the use of used books/notes and providing the cheaper option for reader</p>
+            </div>
+             <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                  <li><a href="Coupons.html">Coupons</a></li>
+                  <li><a href="Coupons.html">Blog post</a></li>
+                  <li><a href="Coupons.html">Return policy</a></li>
+                  <li><a href="Coupons.html">Join affiliate</a></li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us on</h3>
+              <ul>
+                  <li> <a href="https://www.facebook.com">Facebook</a></li>
+                  <li> <a href="https://www.instagram.com">Instagram</a></li>
+                  <li> <a href="https://www.twitter.com">Twitter</a></li>
+                  <li> <a href="https://www.tiktok.com">Titok</a></li>
+                  <br>
+                  <li> <a href="account.html">(LOGOUT)</a></li>
+              </ul>
+            </div>
+          </div>
+         </div>
+    </div>
+    <!--------js for toggle menu------>
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight="0px";
+        
+        function menutoggle(img)
+        {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight == "200px";
+                }
+            else{
+                MenuItems.style.maxHeight=="0px";
+            }
+        }
+    </script>
+</body>
+</html>
